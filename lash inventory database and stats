@@ -1,0 +1,25 @@
+--Create a database for lash supplies
+
+create table lashes (id integer primary key, millimeters integer, brand text, curl text, price integer);
+
+insert into lashes values (1, 9, "llba", "c", 1);
+insert into lashes values (2, 10, "llba", "c", 1);
+insert into lashes values (3, 11, "llba", "c", 2);
+insert into lashes values (4, 12, "llba", "d", 2);
+insert into lashes values (5, 13, "llba", "d", 1);
+insert into lashes values (6, 14, "llba", "d", 1);
+insert into lashes values (7, 15, "llba", "d", 2);
+insert into lashes values (8, 6, "llba", "c", 2);
+insert into lashes values (9, 7, "lost artistry", "C", 1); 
+insert into lashes values (10, 8, "lost artistry", "d", 2);
+insert into lashes values (11, 16, "llba", "c", 1);
+insert into lashes values (12, 17, "llba", "c", 2);
+insert into lashes values (13, 18, "llba", "c", 2);
+insert into lashes values (14, 19, "llba", "d", 1);
+insert into lashes values (15, 20, "lost artistry", "d", 2);
+
+--display the database grouped by prics
+select * from lashes group by price;
+
+--display the total cost of the items
+select sum(price) from lashes; 
