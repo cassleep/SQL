@@ -18,7 +18,7 @@ insert into lashes values (13, 18, "llba", "c", 2);
 insert into lashes values (14, 19, "llba", "d", 1);
 insert into lashes values (15, 20, "lost artistry", "d", 2);
 
---display the database grouped by prics
+--display the database grouped by prices
 select * from lashes group by price;
 
 --display the total cost of the items
